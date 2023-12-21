@@ -21,6 +21,6 @@ cloudinary.config({
 });
 connectDataBase();
 
-app.listen(3000, () => {
-  console.log(`listening on Port ${3000}`);
+app.listen(process.env.PORT, () => {
+  console.log(`listening on Port ${process.env.PORT}`);
 });
